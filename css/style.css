@@ -1,0 +1,191 @@
+:root{
+    --dark-color : #19283F;
+    --green-color : #33D1CC;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color:#EFF5FB;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}   
+
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover{
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+}
+hr{
+    margin: 20px auto;
+    width: 120px;
+    border: solid 2px var(--green-color);
+}
+/* start navbar */
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link.active{
+    color: var(--green-color);
+}
+.navbar .search{
+    border-left: solid 1px var(--green-color);
+}
+.navbar .search svg{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler{
+    color: #fff;
+    border: #fff 1px solid;
+    font-size: 25px;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+/* end navbar */
+/* start landing */
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+/* end landing */
+
+/* start features */
+.features .icon-holder{
+    height: 180px;
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features h3{
+    color: var(--yellow-color);
+}
+.number{
+    font-size: 12rem;
+    color:var(--section-color) ;
+}
+.icon{
+    color: var(--green-color);
+    font-size: 40px;
+}
+/* end features */
+/* start our-work */
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work .active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+.our-work ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.our-work .box{
+    padding: 5px;
+    position: relative; 
+    overflow: hidden;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(51 209 204 /76%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.4s;
+    transform:translateX(calc(-100% - 5px));
+}
+.our-work .box:hover::before{
+    transform:translateX(0);
+}
+/* end our-work */
+
+/* start team */
+.team {
+    background-color: var(--section-color);
+
+}
+.team .title h2{
+    color: var(--yellow-color);
+    margin-bottom: 15px;
+}
+.card .text{
+    background-color: var(--green-color);
+}
+
+/* end team */
+/* start project */
+.project{
+    background-color: var(--dark-color);
+}
+/* end project */
+/* start subscribe */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe .sub-btn{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+.subscribe input{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe input:focus{
+    outline: none;
+}
+/* end subscribe */
+
+/* start footer */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .created{
+    color: var(--green-color);
+}
+.footer .sana{
+    color: var(--yellow-color);
+}
+.footer link li{
+    padding: 20px 0;
+}
+.footer .contact-us .icons svg{
+    width: 20px;
+    height: 20px;
+}
+.footer .facebook{
+    background-color: #1877f2;
+}
+.footer .twitter{
+    background-color: #1da1f2;
+}
+.footer .linkedin{
+    background-color: #0077b5;
+}
+.footer .youtube{
+    background-color: #ff0000;
+}
+/* end footer */
